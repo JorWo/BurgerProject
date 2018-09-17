@@ -1,0 +1,108 @@
+<html>
+  <head>
+    <style>
+    body {
+      background-image:url(https://www.snagajob.com/resources/files/2017/03/burger-king.jpg);
+      background-size: 100%;
+      margin-left:0px;
+    }
+      #left {
+        background-color: Red;
+        width:400px;
+        height: 450px;
+        float:left;
+        margin-left:150px;
+        margin-top:0px;
+        font-size: 30px;
+        
+      }
+      #right {
+        background-color: Blue;
+        width:400px;
+        height:450px;
+        float:right;
+        margin-right:150px;
+        margin-top:0px;
+        margin-bottom:50px;
+        font-size:30px;
+      }
+      h1 {
+        text-align:center;
+        font-size: 40px;
+        color:yellow;
+      }
+      
+      hr {
+       background-color:white;
+       border-color:white;
+       height:3px;
+       background-color:yellow;
+       
+      }
+      button {
+        margin-left:3px;
+      }
+      #leftTitle {
+        margin-left:8px;
+        margin-top:10px;
+        margin-bottom:-1px;
+        font-weight:bold;
+      }
+      #rightTitle {
+      margin-left:8px;
+      margin-top:10px;
+      margin-bottom:-1px;
+      font-weight:bold;
+      }
+      
+      p:not(#leftTitle):not(#rightTitle) {
+        margin-left:20px;
+        font-size:25px;
+      }
+      
+      #leftPrice {
+        text-align:center;
+        font-size:35px;
+        margin-right:10px;
+        color:black;
+      }
+      #rightPrice {
+        text-align:center;
+        font-size:35px;
+        margin-right:10px;
+        color:black;
+      }
+      div {
+        opacity:0.9;
+        
+      }
+     
+    </style>
+  </head>
+  <body>
+    <h1>Burger Menu</h1>
+    <div id=left>
+      <p id=leftTitle></p>
+      <hr>
+      <p id=leftMeat></p>
+      <p id=leftVeg></p>
+      <p id=leftSauce></p>
+      <p id =leftOrgPrice></p>
+      <hr>
+      <button onclick="spicyPrice()">Buy Spicy</button>
+      <h1 id=leftPrice></h1>
+      </div>
+    
+    <div id=right>
+      <p id=rightTitle></p>
+      <hr>
+      <p id =rightMeat></p>
+      <p id =rightVeg></p><p id =rightSauce>
+        <p id =rightOrgPrice></p>
+        <hr>
+        <button onclick="mildPrice()">Buy Mild</button>
+        <h1 id=rightPrice></h1>
+        </div>
+    <script src="burger.js"></script>
+  </body>
+</html>
